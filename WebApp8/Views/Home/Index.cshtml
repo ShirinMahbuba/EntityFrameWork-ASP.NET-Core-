@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+    <div class="col-md-6">
+        <img src="~/images/amardesh.png" class="img-fluid" />
+        <form asp-action="Amardesh" asp-controller="News">
+            <div class="input-group">
+                <span class="input-group-text">Year</span>
+                <input type="number" class="form-control" name="year" value="2024" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text">Month</span>
+                <input type="number" class="form-control" name="month" value="12" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text">Day</span>
+                <input type="number" class="form-control" name="day" value="24" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text"></span>
+                <button type="submit" class="btn btn-primary"> Get News Paper </button>
+            </div>
+        </form>
+    </div>
+
+    <div class="col-md-6">
+        <img src="~/images/amader_shomoy.png" class="img-fluid" />
+        <form asp-action="Amadersomoy" asp-controller="News">
+            <div class="input-group">
+                <span class="input-group-text">Year</span>
+                <input type="number" class="form-control" name="year" value="2024" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text">Month</span>
+                <input type="number" class="form-control" name="month" value="2" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text">Day</span>
+                <input type="number" class="form-control" name="day" value="24" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text">Page No.</span>
+                <input type="number" class="form-control" name="pageno" value="1" />
+            </div>
+            <div class="input-group mt-2">
+                <span class="input-group-text"></span>
+                <button type="submit" class="btn btn-primary"> Get News Paper </button>
+            </div>
+        </form>
+    </div>
+</div>
